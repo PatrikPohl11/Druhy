@@ -31,6 +31,7 @@ git push
 timeout /t 1
 git status
 
+echo pro dalsi nahrani stisknete ENTR
 pause
-
+cls
 goto loop
