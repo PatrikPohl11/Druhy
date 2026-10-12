@@ -13,4 +13,4 @@ prijmeni = "Indian"
 co_ma_rad = "Ku***. chl*** a chlebíčky"
 vek = "mentálně 5, fyzicky asi 67"
 
-print(f"Jmenuji se: {jmeno} {prijmeni}, je mi {vek}, {co_ma_rad} to su jeho koníčky")
+print(f"Jmenuji se: {jmeno} {prijmeni}, je mu {vek}, {co_ma_rad} to su jeho koníčky")
