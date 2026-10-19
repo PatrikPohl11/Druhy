@@ -2,11 +2,11 @@
 kontakty = {
     "jmeno": "Jan",
     "prijmeni": "Novak",
-    "vek": 30
-    "email": "jan.movak6321@antimail.cx"
+    "vek": 30,
+    "email": "jan.movak6321@antimail.cx",
     "telefon": "6968676564636261"
 }
-#vypíše celou satovou strukturu
+#vypíše celou datovou strukturu
 print(f"Puvodni Kontakty: {kontakty}")
 
 print(f"Jmeno: {kontakty['jmeno']}")
