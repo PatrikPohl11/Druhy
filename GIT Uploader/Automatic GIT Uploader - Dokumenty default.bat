@@ -9,8 +9,8 @@ set /p drive=Zadejte disk:
 cd /d %drive%:\
 
 :disk
-set loc=%USERPROFILE%\Documents\Python\GIT Uploader\
-echo Default location is Documents\!!!!!\!!AAA chcere ji zmenit?
+set loc=%USERPROFILE%\Documents\Python\
+echo Default location is \Documents\Python\ chcere ji zmenit?
 choice /C YN /M "Chcete zmenit lokaci repozitare"
 if errorlevel 2 goto zmena
 
