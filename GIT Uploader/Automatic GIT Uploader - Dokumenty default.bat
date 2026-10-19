@@ -1,4 +1,4 @@
-
+@echo off
 title Automatic GIT Uploader
 
 echo POZOR vybrany disk je ten na kterym je umisten tento soubor
