@@ -24,3 +24,12 @@ if nakupni_kosuik:
     print("Kosik neni prazdny")
 else:
     print("kosik je prazdny")
+
+
+povolene_ovoc = ["jelko", "banan", "manga"]
+moje_ovoc = "manga"
+
+if moje_ovoc in povolene_ovoc:
+    print(f"{moje_ovoc.capitalize()} je povolene ovoce")
+else:
+    print(f"{moje_ovoc.capitalize()} neni na seznamu povolenyvch ovocu")
