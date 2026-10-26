@@ -8,3 +8,7 @@ print("Vsichni vyvojari (sjednoceni):", vsichni_devs)
 #operace pruniku (A)
 polygot_devs = python_devs & java_devs
 print("Vyvojari kteri umi oboje (pruinik):", polygot_devs)
+
+#opereace rozdilu
+vsichni_devs = python_devs - java_devs
+print("Vsichni vyvojari (rozdil):", vsichni_devs)
