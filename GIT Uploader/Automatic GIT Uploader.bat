@@ -11,12 +11,12 @@ cd /d %drive%:\
 :disk
 set loc=D:\!Patrik\!Programovani\Python\Skola
 echo Default location is D:\!Patrik\!Programovani\Python\Skola
-choice /C YN /M "Chcete zmenit lokaci repozitare"
-if errorlevel 2 goto zmena
+choice /C YN /M "Chcete tuto lokaci repozitare pouzit"
+if errorlevel 1 cd /d d:\ & goto zmena
+
 
 choice /c 1234 /n /m "Chcete vybrat z techto lokaci: (1=D:\!Patrik\!Programovani\Python\Skola, 2=D:\!Patrik\!Programovani\Python\Skola_1C_2026-27\Treti, 3=Dokumenty\lokace_pro_skolni_komp, 4=Zadat vlastni lokaci)"
 
-if %errorlevel%==4 goto zmena
 if %errorlevel%==3 set loc=%USERPROFILE%\Documents\lokace_pro_skolni_komp & goto zmena
 if %errorlevel%==2 set loc=D:\!Patrik\!Programovani\Python\Skola_1C_2026-27\Treti & goto zmena
 if %errorlevel%==1 set loc=D:\!Patrik\!Programovani\Python\Skola & goto zmena
