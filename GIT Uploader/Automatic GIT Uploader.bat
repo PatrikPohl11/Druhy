@@ -12,14 +12,15 @@ cd /d %drive%:\
 set loc=D:\!Patrik\!Programovani\Python\Skola
 echo Default location is D:\!Patrik\!Programovani\Python\Skola
 choice /C YN /M "Chcete tuto lokaci repozitare pouzit"
+if errorlevel 2 goto :vyber
 if errorlevel 1 cd /d d:\ & goto zmena
 
+:vyber
+choice /c 1234 /n /m "Vyberte z nasledujicich moznosti: (1=D:\!Patrik\!Programovani\Python\Skola, 2=D:\!Patrik\!Programovani\Python\Skola_1C_2026-27\Treti, 3=Dokumenty\lokace_pro_skolni_komp, 4=Zadat vlastni lokaci)"
 
-choice /c 1234 /n /m "Chcete vybrat z techto lokaci: (1=D:\!Patrik\!Programovani\Python\Skola, 2=D:\!Patrik\!Programovani\Python\Skola_1C_2026-27\Treti, 3=Dokumenty\lokace_pro_skolni_komp, 4=Zadat vlastni lokaci)"
-
-if %errorlevel%==3 set loc=%USERPROFILE%\Documents\lokace_pro_skolni_komp & goto zmena
-if %errorlevel%==2 set loc=D:\!Patrik\!Programovani\Python\Skola_1C_2026-27\Treti & goto zmena
-if %errorlevel%==1 set loc=D:\!Patrik\!Programovani\Python\Skola & goto zmena
+if %errorlevel%==3 set loc=%USERPROFILE%\Documents\lokace_pro_skolni_komp & cd /d c:\ &goto zmena
+if %errorlevel%==2 set loc=D:\!Patrik\!Programovani\Python\Skola_1C_2026-27\Treti & cd /d d:\ & goto zmena
+if %errorlevel%==1 set loc=D:\!Patrik\!Programovani\Python\Skola & cd /d d:\ & goto zmena
 
 
 
